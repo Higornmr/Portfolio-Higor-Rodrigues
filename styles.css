@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333;
+  background-color: #333;
+  color: white;
+  width: 100vw;
+  height: 60px;
+  align-items: center;
+}
+
+nav h1 {
+  margin-left: 45px;
+}
+
+#menu {
+  display: flex;
+  gap: 24px;
+  margin-right: 30px;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-left: 55%;
+}
+
+.links-menu {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  position: absolute;
+  max-width: 80vw;
+  height: 2044px;
+  left: 12%;
+  top: 22%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+}
+
+.text {
+  text-align: center;
+  width: 55%;
+  margin-left: 145px;
+}
+
+#skills {
+  margin: 38% 72% 0% 17%;
+  width: 450px;
+
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+#skills h2 {
+  margin: 11% 39% 2%;
+  font-weight: bold;
+
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+svg {
+  max-width: 17%;
+  margin: 4px;
+  max-width: 13%;
+  margin: 3px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.eu img {
+  max-width: 194px;
+  border-radius: 101px;
+  margin-left: 21%;
+}
+
+.texth2 {
+  height: 10%;
+  margin-top: 2%;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.eu h3 {
+  max-width: 86%;
+  margin-left: 5%;
+  font-weight: 300;
+}
+
+.eu h4 {
+  margin-left: 45%;
+}
+
+.titulos {
+  margin: 17% 0% 10% 43%;
+}
+
+.projetos {
+  display: flex;
+  perspective: 900px;
+  justify-content: space-around;
+  width: 100%;
+  height: 337px;
+}
+
+.projects {
+  width: 400px;
+  height: 550px;
+}
+
+.img {
+  width: 38%;
+  height: 87%;
+  border-radius: 4px;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.5s;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.conteudo1 {
+  background: url(./assets/Mario.png) center no-repeat;
+  background-size: contain;
+}
+
+.conteudo2 {
+  background: url(./assets/Dark\ mode.png) center no-repeat;
+  background-size: contain;
+}
+
+.conteudo3 {
+  background: url(./assets/Todolist.png) center no-repeat;
+  background-size: contain;
+}
+
+.conteudo4 {
+  background: url(./assets/Gerador\ de\ Senha.png) center no-repeat;
+  background-size: contain;
+}
+
+.img:hover {
+  transform: translateZ(10px) rotate(20deg) rotateY(30deg);
+}
+
+.title {
+  font-size: 22px;
+  color: black;
+  position: absolute;
+  top: 80%;
+  right: 25px;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+}
+
+.img:hover .title {
+  transform: translateZ(50px);
+}
+
+.linha {
+  height: 1px;
+  width: 100%;
+  color: black;
+  margin: 15px;
+  background-color: black;
+}
+
+.projects {
+  max-height: 310px;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.projects h3 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.arrow {
+  border: solid #ebebeb;
+  border-width: 0 7px 7px 0;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 19px;
+  margin-left: 16px;
+
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+#contato {
+  width: 37%;
+  margin-left: 32%;
+}
+#contato h2 {
+  margin-left: 37%;
+  margin-bottom: 4px;
+}
+
+#contato a {
+  text-decoration: none;
+  color: black;
+  margin-left: 22%;
+  font-weight: bold;
+}
