@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato&family=Lexend+Deca:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;900&display=swap"
@@ -18,6 +19,15 @@
         <div>
             <h1>Higor Rodrigues</h1>
         </div>
+
+        <div>
+            <input type="checkbox" name="change-theme" id="change-theme">
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
+
         <div id="menu">
             <div>
                 <a rel="stylesheet" class="links-menu" href="#sobre">Sobre mim </a>
@@ -44,7 +54,8 @@
                     Iracema–sp, Brasil.
                     <br>
                     <br>
-                    Sou Programador Front-End, meu foco atual é aprimorar as minhas habilidades em JavaScript, React e Node 
+                    Sou Programador Front-End, meu foco atual é aprimorar as minhas habilidades em JavaScript, React e
+                    Node
                     para também ter habilidades de Back-End e me tornar um programador Full-Stack !
                 </h3>
                 <br>
@@ -89,91 +100,79 @@
         <div class="titulos">
             <h2 id="trabalhos">Projetos</h2>
         </div>
+        <div class="linha"><h1>Projetos com JavaScript</h1>
 
-    
-        <article class="projetos">
+        </div>
+
+        
+
+        <article class="projetos init-hidden">
             
-            <div class="projects">
-                <h2>Projeto 01</h2>
-                <h3>Neste projeto foi utilizado HTML, CSS e JavaScript como linguagem, realizando uma criação de um jogo
-                    com a manipulação de imagens, trazendo um alterações nelas conforme o resultado do jogo, com o
-                    JavaScript entrou os comandos de movimentação do personagem principal e a troca do gift principal
-                    para o termino do jogo “Game Over”. </h3>
-                <br>
-                <br>
-                <a class="link" rel="stylesheet" href="https://github.com/Higornmr/Mario" target="_blank">Link para
-                    o Github</a>
-            </div>
+       
+
             <figure class="conteudo1 img">
                 <figcaption class="title">Jogo do Mario</figcaption>
+                <a class="link" rel="stylesheet" href="https://github.com/Higornmr/Mario" target="_blank">Link para
+                    o Github</a>
             </figure>
 
-            
-
-        </article>
-        
-        <div class="linha"></div>
-
-        <article class="projetos">
-            <div class="projects">
-                <h2>Projeto 02</h2>
-                <h3>Projeto de aplicação Dark-Mode, nele é possível trocar a aparência do site de Light para Dark,
-                    mantendo a última escolha do usuário salva como preferência, incluindo a troca de cor das letras e
-                    da página em si, para realizar essa mudança foi utilizado a linguagem de JavaScript . </h3>
-                <br>
-                <br>
+            <figure class="conteudo2 img">
+                <figcaption class="title">Dark-Mode na página</figcaption>
                 <a class="link" link rel="stylesheet" href="https://github.com/Higornmr/Dark-Mode" target="_blank">Link
                     para o
                     Github</a>
-            </div>
-            <figure class="conteudo2 img">
-                <figcaption class="title">Dark-Mode na página</figcaption>
-            </figure> 
+            </figure>
+
         </article>
 
-        <div class="linha"></div>
-        <article class="projetos">
-            <div class="projects">
-                <h2>Projeto 03</h2>
-                <h3> Projeto de To Do List, utilizando JavaScript, projeto direcionado a criar uma lista de objetivos de curto a longo prazo podendo realizar alterações neles conforme o usuário deseje.  </h3>
-                <br>
-                <br>
-                <a class="link" link rel="stylesheet" href="https://github.com/Higornmr/todolist" target="_blank">Link para o Github</a>
-            </div>
+        <article class="projetos init-hidden">
             <figure class="conteudo3 img">
                 <figcaption class="title">To Do List</figcaption>
+                <a class="link" link rel="stylesheet" href="https://github.com/Higornmr/todolist" target="_blank">Link
+                    para
+                    o Github</a>
             </figure>
-        </article>
 
-        <div class="linha"></div>
-
-        <article class="projetos">
-            <div class="projects">
-                <h2>Projeto 04</h2>
-                <h3>Utilizando JavaScript foi feito um projeto com foco em gerar uma senha altamente segura para o
-                    usuário, podendo ser aplicado em diversas plataformas que necessitam de uma senha forte e segura.
-                </h3>
-                <br>
-                <br>
-                <a class="link" link href="https://github.com/Higornmr/Gerador-de-Senha" target="_blank">Link para o
-                    Github</a>
-            </div>
             <figure class="conteudo4 img">
                 <figcaption rel="stylesheet" class="title">Gerador de Senha</figcaption>
+                <a class="link" link href="https://github.com/Higornmr/Gerador-de-Senha" target="_blank">Link para o
+                    Github</a>
             </figure>
+
         </article>
+
+        <div class="linha"><h1>Projetos com React</h1></div>
+
+        <article class="projetos init-hidden">
+          
+            <figure class="conteudo5 img">
+                <figcaption class="title">Lista de Pedidos</figcaption>
+                <a class="link" link rel="stylesheet" href="https://github.com/Higornmr/code-burguer"
+                    target="_blank">Link para
+                    o Github</a>
+            </figure>
+
+            <figure class="conteudo6 img">
+                <figcaption rel="stylesheet" class="title">To Do List</figcaption>
+                <a class="link" link href="https://github.com/Higornmr/ToDolist-com-REACT" target="_blank">Link para o
+                    Github</a>
+            </figure>
+
+        </article>
+
         <div id="btnTop">
-        <i class="arrow up"></i>
-    </div>
-    </div>
+            <i class="arrow up"></i>
+        </div>
+        </div>
         <footer id="contato">
             <div>
                 <h2 id="contatos">Contato</h2>
-                <a href="https://www.linkedin.com/in/higor-martins-rodrigues-b04497236/" target="_blank">Linkedin</a>
-                <a href="https://github.com/Higornmr" target="_blank">Github</a>
+                <a class="link" link href="https://www.linkedin.com/in/higor-martins-rodrigues-b04497236/" target="_blank">Linkedin</a>
+                <a class="link" link href="https://github.com/Higornmr" target="_blank">Github</a>
             </div>
         </footer>
     </main>
+
 </body>
 
 </html>

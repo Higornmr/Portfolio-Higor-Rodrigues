@@ -6,20 +6,25 @@
 }
 
 body {
-  background-color: #ebebeb;
-  scroll-behavior: smooth;
-  width: 100vw;
+  background: #ebebeb;
+  width: 99vw;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] {
+  display: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #333;
-  background-color: #333;
-  color: white;
-  width: 100vw;
-  height: 60px;
   align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
+
+  background-color: #eceff1;
+  
+  box-shadow: .5px .5px 10px .5px #000;
 }
 
 nav h1 {
@@ -36,8 +41,8 @@ nav h1 {
 }
 
 .links-menu {
-  color: white;
   text-decoration: none;
+  color: #000;
 }
 
 main {
@@ -75,6 +80,7 @@ header {
 
   transform: translatey(0px);
   animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
 }
 
 svg {
@@ -82,6 +88,7 @@ svg {
   margin: 4px;
   max-width: 13%;
   margin: 3px;
+  filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
 }
 
 @keyframes float {
@@ -127,13 +134,10 @@ svg {
   display: flex;
   perspective: 900px;
   justify-content: space-around;
-  width: 100%;
-  height: 337px;
-}
 
-.projects {
-  width: 400px;
-  height: 550px;
+  margin-top: 5%;
+  height: 337px;
+  width: 100%;
 }
 
 .img {
@@ -144,11 +148,22 @@ svg {
   transform-style: preserve-3d;
   will-change: transform;
   transition: transform 0.5s;
+  filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
 }
 
 .link {
   text-decoration: none;
   color: black;
+}
+
+.title {
+  font-size: 22px;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
 }
 .conteudo1 {
   background: url(./assets/Mario.png) center no-repeat;
@@ -170,18 +185,18 @@ svg {
   background-size: contain;
 }
 
-.img:hover {
-  transform: translateZ(10px) rotate(20deg) rotateY(30deg);
+.conteudo5 {
+  background: url(./assets/BurguerpedidosREACT.png) center no-repeat;
+  background-size: contain;
 }
 
-.title {
-  font-size: 22px;
-  color: black;
-  position: absolute;
-  top: 80%;
-  right: 25px;
-  transform: translateY(-50%);
-  transition: transform 0.5s;
+.conteudo6 {
+  background: url(./assets/Todolist\ REACT.png) center no-repeat;
+  background-size: contain;
+}
+
+.img:hover {
+  transform: translateZ(10px) rotate(20deg) rotateY(30deg);
 }
 
 .img:hover .title {
@@ -191,23 +206,9 @@ svg {
 .linha {
   height: 1px;
   width: 100%;
-  color: black;
+ 
   margin: 15px;
-  background-color: black;
-}
-
-.projects {
-  max-height: 310px;
-}
-
-.projects h2 {
-  margin-bottom: 30px;
-  margin-left: 50px;
-}
-
-.projects h3 {
-  margin-top: 10px;
-  font-weight: 400;
+  
 }
 
 #btnTop {
@@ -224,6 +225,7 @@ svg {
   justify-content: center;
   cursor: pointer;
 }
+
 .arrow {
   border: solid #ebebeb;
   border-width: 0 7px 7px 0;
@@ -231,7 +233,6 @@ svg {
   display: inline-block;
   margin-top: 19px;
   margin-left: 16px;
-
 }
 
 .up {
@@ -249,7 +250,52 @@ svg {
 
 #contato a {
   text-decoration: none;
-  color: black;
   margin-left: 22%;
   font-weight: bold;
 }
+
+.bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bi-moon{
+  display: none;
+}
+
+.dark .bi-sun{
+  display: none;
+}
+
+.dark .bi-moon{
+  display: block;
+}
+
+.dark,
+.dark nav{
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark a{
+  color: #fff;
+}
+
+.dark svg{
+  filter: drop-shadow(0 0 0.4em rgba(252, 249, 249, 0.979));
+}
+
+.dark h1{
+  color: #fff;
+}
+
+.init-hidden {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.init-hidden-off {
+  opacity: 1;
+}
+
+
