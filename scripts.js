@@ -1,6 +1,23 @@
 
 const changeThemeBtn = document.querySelector("#change-theme");
 const btn = document.getElementById("btnTop");
+const boxes = document.querySelectorAll('.box');
+
+window.addEventListener('scroll', checkBoxes)
+checkBoxes()
+
+function checkBoxes() {
+  const triggerBottom = window.innerHeight / 5 * 3
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top
+    if (boxTop < triggerBottom) {
+      box.classList.add('show')
+    }
+    else {
+      box.classList.remove('show')
+    }
+  })
+}
 
 
 function toggleDarkMode() {
@@ -16,6 +33,8 @@ function loadTheme() {
 }
 
 loadTheme();
+
+
 
 changeThemeBtn.addEventListener("change", function () {
   toggleDarkMode();
@@ -44,15 +63,18 @@ function scrollFunction() {
 }
 
 const observer = new IntersectionObserver(entries => {
-    Array.from(entries).forEach(entry =>{
-        if (entry.intersectionRatio >= 1){
-            entry.target.classList.add('init-hidden-off')
-        }
-    })
-    
+  Array.from(entries).forEach(entry => {
+    if (entry.intersectionRatio >= 1) {
+      entry.target.classList.add('init-hidden-off')
+    }
+  })
+
 }, {
-    threshold: [0, .5, 1]
+  threshold: [0, .5, 1]
 })
 Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
-    observer.observe(element)
+  observer.observe(element)
 })
+
+
+

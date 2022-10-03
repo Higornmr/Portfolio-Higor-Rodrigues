@@ -9,6 +9,7 @@ body {
   background: #ebebeb;
   width: 99vw;
   transition: 0.2s;
+  overflow-x: hidden;
 }
 
 input[type="checkbox"] {
@@ -23,8 +24,8 @@ nav {
   padding: 1rem 2rem;
 
   background-color: #eceff1;
-  
-  box-shadow: .5px .5px 10px .5px #000;
+
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
 }
 
 nav h1 {
@@ -206,9 +207,8 @@ svg {
 .linha {
   height: 1px;
   width: 100%;
- 
+
   margin: 15px;
-  
 }
 
 #btnTop {
@@ -260,33 +260,33 @@ svg {
   cursor: pointer;
 }
 
-.bi-moon{
+.bi-moon {
   display: none;
 }
 
-.dark .bi-sun{
+.dark .bi-sun {
   display: none;
 }
 
-.dark .bi-moon{
+.dark .bi-moon {
   display: block;
 }
 
 .dark,
-.dark nav{
+.dark nav {
   background-color: #263238;
   color: #fff;
 }
 
-.dark a{
+.dark a {
   color: #fff;
 }
 
-.dark svg{
+.dark svg {
   filter: drop-shadow(0 0 0.4em rgba(252, 249, 249, 0.979));
 }
 
-.dark h1{
+.dark h1 {
   color: #fff;
 }
 
@@ -299,4 +299,219 @@ svg {
   opacity: 1;
 }
 
+.box {
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
 
+.box.show {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1281px) {
+
+
+  .bi {
+    margin-right: 390px;
+  }
+
+  #menu {
+    margin-left: 10px;
+  }
+  #menu div {
+    width: 148px;
+  }
+  .links-menu {
+    margin-left: 16px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  nav {
+    width: 931px;
+  }
+
+  #menu {
+    margin-left: 2px;
+  }
+
+  main {
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  main {
+    max-width: 100vw;
+  }
+
+  nav {
+    width: 768px;
+  }
+
+  nav h1 {
+    margin-left: 0px;
+    width: 186px;
+}
+
+  .bi {
+    margin-right: 80px;
+    margin-left: 23px;
+  }
+
+  .links-menu {
+    margin-left: 10px;
+  }
+
+  header {
+    display: contents;
+  }
+
+  main {
+    top: 80px;
+  }
+
+  .texth2 {
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  .eu img {
+    display: block;
+    margin: 0px auto;
+  }
+
+  #skills h2 {
+    margin-left: 38%;
+  }
+
+  #skills {
+    width: 438px;
+    margin-left: 105px;
+    margin-top: 78px;
+  }
+
+  .img {
+    height: 63%;
+  }
+
+  #contato {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    max-width: 125vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    width: 800px;
+    height: 109px;
+  }
+
+  main {
+    max-width: 184vw;
+  }
+
+  nav h1 {
+    font-size: 26px;
+  }
+
+  a {
+    font-size: 25px;
+  }
+
+  .eu {
+    width: 566px;
+    height: 738px;
+  }
+
+  #skills {
+    display: grid;
+    justify-items: center;
+
+    position: static;
+
+    max-width: 229px;
+    height: 657px;
+    margin-top: 18px;
+    margin-left: -44px;
+  }
+
+  #skills h2 {
+    margin-left: 0;
+  }
+
+  svg {
+    max-width: 34%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  nav {
+    width: 374px;
+    height: 72px;
+  }
+
+  nav h1 {
+    margin-left: 0px;
+    font-size: 30px;
+  }
+
+  .bi {
+    margin-right: 0px;
+  }
+
+  #menu {
+    border: 1px solid black;
+    display: none;
+  }
+
+  .eu {
+    width: 306px;
+    height: 738px;
+    margin-top: 20px;
+  }
+
+  #skills {
+    margin-left: 45px;
+  }
+
+  #skills h2 {
+    margin-left: 87px;
+  }
+
+  .linha {
+    font-size: 11px;
+    margin-bottom: 30px;
+  }
+
+  .projetos {
+    margin-bottom: -114px;
+  }
+
+  #contato {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #contatos {
+    font-size: 20px;
+  }
+
+  #contato a {
+    font-size: 19px;
+    margin-left: 52px;
+  }
+
+  #btnTop {
+    margin-right: 255px;
+  }
+}
