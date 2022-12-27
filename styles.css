@@ -144,42 +144,9 @@ svg {
 
   border-radius: 4px;
   position: relative;
-  transform-style: preserve-3d;
   will-change: transform;
   transition: transform 0.2s;
   filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
-}
-
-.caixa {
-  display: flex;
-  width: 99%;
-  height: 69%;
-}
-.caixa::before,
-.caixa::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: calc(100% + 1rem);
-  height: calc(100% + 1rem);
-  background: linear-gradient(
-    45deg,
-    #ffff00,
-    #00ff00,
-    #0099ff,
-    #001aff,
-    #a200ff,
-    #ff0055,
-    #ff0000,
-    #ffff00,
-    #00ff00,
-    #0099ff,
-    #001aff,
-    #a200ff
-  );
-  background-size: 300%;
-  border-radius: 0.5rem;
-  animation: AnimarBorda 8s linear alternate infinite;
 }
 
 @keyframes AnimarBorda {
@@ -215,14 +182,6 @@ svg {
   width: 97%;
   height: 135%;
   margin: 1rem;
-}
-
-.img:hover {
-  transform: translateZ(10px) rotate(20deg) rotateY(30deg);
-}
-
-.img:hover .title {
-  transform: translateZ(50px);
 }
 
 .linha {
