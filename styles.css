@@ -38,12 +38,37 @@ nav h1 {
   margin-right: 1.8rem;
   justify-content: space-around;
   cursor: pointer;
-  margin-left: 55%;
+}
+
+.change-theme {
+  width: 1rem;
+
+  position: absolute;
 }
 
 .links-menu {
   text-decoration: none;
   color: #000;
+  font-size: 1.2rem;
+}
+
+.links-menu:hover {
+  color: rgb(63, 190, 46);
+  transition: 0.8s;
+  font-size: 1.5rem;
+}
+
+.dark .links-menu:hover {
+  color: rgb(255, 160, 122);
+}
+
+span {
+  color: rgb(63, 190, 46);
+  font-size: 1.6rem;
+}
+
+.dark span {
+  color: rgb(255, 160, 122);
 }
 
 main {
@@ -84,8 +109,7 @@ svg {
   max-width: 17%;
   margin: 4px;
   max-width: 13%;
-  margin: 3px;
-  filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
+  filter: drop-shadow(0 0 0.4em rgb(63, 190, 46));
 }
 
 @keyframes float {
@@ -149,19 +173,6 @@ svg {
   filter: drop-shadow(0 0 0.4em rgba(68, 67, 67, 0.979));
 }
 
-@keyframes AnimarBorda {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
-
-.caixa::after {
-  filter: blur(30px);
-}
-
 .link {
   text-decoration: none;
   color: black;
@@ -169,7 +180,7 @@ svg {
 
 .title {
   font-size: 1.3rem;
-  color: white;
+  color: black;
 }
 
 .imagem {
@@ -184,6 +195,10 @@ svg {
   width: 100%;
 
   margin: 0.9rem;
+}
+
+.linha span {
+  font-size: 2.5rem;
 }
 
 #btnTop {
@@ -214,21 +229,32 @@ svg {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
+
 #contato {
-  width: 37%;
-  margin-left: 32%;
-  height: 4%;
-  margin-top: 4rem;
-}
-#contato h2 {
-  margin-left: 37%;
-  margin-bottom: 4px;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-#contato a {
-  text-decoration: none;
-  margin-left: 22%;
-  font-weight: bold;
+#contato h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-contato {
+  display: flex;
+}
+
+#contato .icon-contato .link {
+  margin: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+#contato svg {
+  height: 4rem;
+  width: 25rem;
 }
 
 .bi {
@@ -248,6 +274,11 @@ svg {
   display: block;
 }
 
+.dark .links-menu:hover {
+  color: rgb(255, 160, 122);
+  transition: 0.5s;
+}
+
 .dark,
 .dark nav {
   background-color: #263238;
@@ -259,7 +290,7 @@ svg {
 }
 
 .dark svg {
-  filter: drop-shadow(0 0 0.4em rgba(252, 249, 249, 0.979));
+  filter: drop-shadow(0 0 0.4em rgb(255, 160, 122));
 }
 
 .dark h1 {
@@ -268,6 +299,10 @@ svg {
 
 .dark .eu img {
   border: 1px solid #fff;
+}
+
+.dark .title {
+  color: white;
 }
 
 .init-hidden {
@@ -294,25 +329,28 @@ svg {
 
 @media screen and (max-width: 1281px) {
   .bi {
-    margin-right: 390px;
+    margin-right: 24.3rem;
   }
 
   #menu {
-    margin-left: 10px;
+    margin-left: 0.6rem;
   }
 
   #menu div {
-    width: 148px;
+    width: 14.2rem;
   }
 
+  .icon-contato svg {
+  }
   .links-menu {
-    margin-left: 16px;
-    font-size: 26px;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    margin-left: 6rem;
   }
 
   header {
-    width: 1000px;
-    height: 600px;
+    width: 62.5rem;
+    height: 37.5rem;
   }
 }
 
@@ -384,10 +422,6 @@ svg {
   .bi {
     margin-right: 80px;
     margin-left: 23px;
-  }
-
-  .links-menu {
-    margin-left: 10px;
   }
 
   header {
@@ -518,10 +552,6 @@ svg {
   #contato {
     margin-left: 0px;
     width: 100%;
-  }
-
-  #contatos {
-    font-size: 20px;
   }
 
   #contato a {
